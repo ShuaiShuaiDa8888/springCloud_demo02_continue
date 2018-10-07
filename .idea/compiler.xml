@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-client" />
         <module name="config-server" />
+        <module name="config-server-copy" />
         <module name="eureka-server" />
         <module name="springCloud_demo02_continue" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="config-server-copy" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="springCloud_demo02_continue" target="1.5" />
     </bytecodeTargetLevel>

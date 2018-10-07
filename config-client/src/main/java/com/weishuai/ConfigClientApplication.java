@@ -21,8 +21,11 @@ public class ConfigClientApplication {
 
 	@Value("${foo}")
 	private String foo;
+	@Value("${server.port}")
+	private String port;
+
 	@RequestMapping(value = "/foo")
 	public String hi(){
-		return foo;
+		return foo + " : " + port;
 	}
 }
