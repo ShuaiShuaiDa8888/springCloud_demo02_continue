@@ -1,12 +1,20 @@
 spring:
   application:
-    name: config-server  #指定程序名为config-server
-  profiles:
-    active: native  #配置Config Server 从本地读取配置
+    name: config-server #指定程序名为config-server
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/shared
+        git:
+          uri: https://github.com/ShuaiShuaiDa8888/config-weishuai.git
+          search-paths: respo
+          username: 601770050@qq.com
+          password:
+#  profiles:
+#    active: native  #配置Config Server 从本地读取配置
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:/shared
 server:
   port: 8769
