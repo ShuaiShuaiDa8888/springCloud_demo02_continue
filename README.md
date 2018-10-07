@@ -1,2 +1,4 @@
 # springCloud_demo02_continue
 springCloud_demo02的延伸
+config-server:从本地读取配置文件
+config-client:从本地读取配置文件

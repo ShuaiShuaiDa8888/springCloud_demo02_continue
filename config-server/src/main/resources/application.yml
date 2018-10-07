@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server  #指定程序名为config-server
+  profiles:
+    active: native  #配置Config Server 从本地读取配置
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+server:
+  port: 8769

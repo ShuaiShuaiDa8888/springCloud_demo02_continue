@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:8769 #向url地址为 http://localhost:8769 的Config Server 读取配置文件
+      fail-fast: true #如果没有读取成功，则执行快速失败（fail-fast），读取的是 dev 文件。
+  profiles:
+    active: dev #bootstrap.yml配置文件变量中{spring.application.name}和变量{spring.profiles.active}，两者以“-”相连，
+                  #构成了向Config Server 读取的配置文件名。所以本例在配置中心读取的配置文件名为 config-client-dev.yml文件
